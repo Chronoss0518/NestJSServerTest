@@ -8,7 +8,7 @@ export class UserController {
     constructor(private readonly userService: UserService) {}
 
     @Get("id")
-    getId():string
+    getId():number
     {
         return this.userService.getId();
     }
